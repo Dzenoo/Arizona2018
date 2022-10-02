@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Pocetna.css" />
+    <link rel="stylesheet" href="css/Kontakt.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/61fc011943.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Arizona | Kontakt</title>
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat";
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="/index.html">
+          <img src="./assets/logo.png" />
+        </a>
+        <h2>
+          Arizona <br />
+          <span>Auto skola</span>
+        </h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="./index.html">Početna</a>
+          </li>
+          <li>
+            <a href="./Onama.html">O Nama</a>
+          </li>
+          <li>
+            <a href="./Galerijaa.html">Galerija</a>
+          </li>
+          <li>
+            <a href="./Cenovnik.html">Cenovnik</a>
+          </li>
+          <li>
+            <a href="./Kontakt.html">Kontakt</a>
+          </li>
+          <button class="closeBtn" onclick="closeMenuHandler()">X</button>
+        </ul>
+        <button class="btn" onclick="openMenuHandler()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="contact_section">
+      <div class="contact_section_box">
+        <div class="contact_section_box_form">
+          <h1>Kontaktirajte nas</h1>
+          <form
+            action="mailto:someone@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input type="text" placeholder="Ime.." />
+            <input type="email" placeholder="Email..." />
+            <input maxlength="60" placeholder="Poruka..." />
+            <button>Posalji</button>
+          </form>
+        </div>
+        <div class="contact_section_box_info">
+          <h1>Informacije</h1>
+          <i class="fa-solid fa-location-dot"> Sarajevska 28,Novi Pazar</i>
+          <i class="fa-solid fa-phone"> 063 1441547</i>
+          <i class="fa-solid fa-envelope"> a.s_arizona2018@outlook.com</i>
+        </div>
+        <img
+          id="myImg"
+          src="assets/mapa.png"
+          alt="Mapa"
+          style="width: 100%; max-width: 500px"
+        />
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
